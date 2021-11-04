@@ -5,6 +5,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 import glob
 import importlib
+from userbot import CMD_HELP
 import sys
 from pathlib import Path
 
