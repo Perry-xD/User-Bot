@@ -11,7 +11,7 @@ logging.basicConfig(
     handlers=[logging.FileHandler("logs.txt"), logging.StreamHandler()],
 )
 
-help = {}
+CMD_HELP = {}
 
 (
     SESSION,
