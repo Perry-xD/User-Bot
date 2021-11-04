@@ -21,10 +21,6 @@
       "description": "Get this value from my.telegram.org! Putting Others Value May result In Account Ban.",
       "value": ""
     },
-    "LOGGER_ID": {
-      "description": "Your group's chat id",
-      "value": ""
-    },
     "SESSION": {
       "description": "Your telegram telethon string session ",
       "value": ""
