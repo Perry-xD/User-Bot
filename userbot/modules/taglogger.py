@@ -1,4 +1,4 @@
-from telethon import events
+from telethon import events, client
 import os
 import asyncio
 
