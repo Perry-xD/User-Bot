@@ -1,11 +1,12 @@
 from ..utils import userbot
 import io
 import os
+from telethon import events
 import asyncio
 
 is_allowed = []
 
-@userbot(incoming=True)
+@events.register(events.NewMessage(incoming=True))
 async def pmpermit(event):
   if event.is_private:
     pass
@@ -17,7 +18,7 @@ async def pmpermit(event):
   else:
     await event.reply("**Hey bro! This is my master's dm don't spam**")
     
-@userbot(pattern="allow")
+@events.register(events.NewMessage(pattern="!allow"))
 async def pmallow(event):
   if event.is_private:
     chat = event.get_chat()
@@ -42,7 +43,7 @@ async def pmallow(event):
 
 
 
-@userbot(pattern="disallow")
+@events.register(events.NewMessage(pattern="!disallow"))
 async def pmdallow(e):
   if event.is_private:
     chat = event.get_chat()
@@ -65,7 +66,7 @@ async def pmdallow(e):
       
       
       
-@userbot(pattern="listallowed")
+@events.register(events.NewMessage(pattern="!listallowed"))
 async def pmlistallow(e):
   for i in is_allowed:
     if len(i) > 0:
