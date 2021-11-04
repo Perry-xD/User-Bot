@@ -30,8 +30,5 @@ help.update({
 
 help.update({
     "pmpermit":
-    "do !allow to allow someone to pm\n
-    do !disallow to disallow someone to pm
-    do !listallowed to get the list of allowed users in pm
-"
+    "do !allow to allow someone to pm\ndo !disallow to disallow someone to pm\ndo !listallowed to get the list of allowed users in pm"
 })
