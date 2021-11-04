@@ -1,8 +1,8 @@
-from ..utils import userbot
+from telethon import events
 from userbot import help
 import asyncio
 
-@userbot(pattern="help")
+@events.register(events.NewMessage(pattern="!help"))
 async def help(event):
     args = event.pattern_match.group(1).lower()
     if args:
