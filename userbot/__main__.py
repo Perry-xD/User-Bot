@@ -5,6 +5,9 @@ from userbot import bot
 from telethon.tl import functions
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 import glob
+import importlib
+import sys
+from pathlib import Path
 
 
 CHAT = os.getenv("LOGGER_ID")
