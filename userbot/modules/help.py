@@ -2,7 +2,7 @@ from telethon import events
 from userbot import CMD_HELP
 import asyncio
 
-@events.register(events.NewMessage(pattern="!help"))
+@bot.on(events.NewMessage(pattern="!help"))
 async def help(event):
     args = event.pattern_match.group(1).lower()
     if args:
