@@ -1,4 +1,4 @@
-from ..utils import userbot
+
 import io
 import os
 from telethon import events
