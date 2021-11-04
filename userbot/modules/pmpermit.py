@@ -12,7 +12,7 @@ async def pmpermit(event):
   else: 
     return
   sender = await event.sender_id
-  if sender is in is_allowed:
+  if sender in is_allowed:
     return
   else:
     await event.reply("**Hey bro! This is my master's dm don't spam**")
@@ -21,7 +21,7 @@ async def pmpermit(event):
 async def pmallow(event):
   if event.is_private:
     chat = event.get_chat()
-    if chat.id is in is_allowed:
+    if chat.id in is_allowed:
       await event.edit("this user is already allowed")
     else:
       await is_allowed.append(chat.id)
@@ -32,7 +32,7 @@ async def pmallow(event):
       await event.edit("please reply to someone")
       return
     sender = chat.sender_id
-    if sender is in is_allowed:
+    if sender in is_allowed:
       await event.edit("this user is already allowed")
     else:
       await is_allowed.append(sender)
@@ -46,7 +46,7 @@ async def pmallow(event):
 async def pmdallow(e):
   if event.is_private:
     chat = event.get_chat()
-    if chat is in is_allowed:
+    if chat in is_allowed:
       await is_allowed.remove(chat.id)
       await e.edit("Removed this user from allowed user list")
   elif event.is_group:
