@@ -1,7 +1,7 @@
 
 import io
 import os
-from telethon import events
+from telethon import events, client
 import asyncio
 
 is_allowed = []
