@@ -1,6 +1,6 @@
-from ..utils import userbot
+from telethon import events
 import asyncio
 
-@userbot(pattern="check")
+@events.register(events.NewMessage(pattern="!check"))
 async def eval_(e):
     await e.edit("**✔USERBOT ONLINE!**")
