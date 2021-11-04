@@ -1,0 +1,38 @@
+{                
+  "name": "UserBot",
+  "description": "The best userbot made by Tilak Sharma",  
+  "logo": "",
+    "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/perry-xd/user-bot/",
+  "website": "https://github.com/perry-xd/user-bot/",
+  "success_url": "#TODO",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Putting Others Value May result In Account Ban.",
+      "value": ""
+    },
+    "LOGGER_ID": {
+      "description": "Your group's chat id",
+      "value": ""
+    },
+    "SESSION": {
+      "description": "Your telegram telethon string session ",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+      {
+          "url": "heroku/python"
+      }
+  ]
+}
