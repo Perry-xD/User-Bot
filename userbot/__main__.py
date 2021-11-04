@@ -1,6 +1,5 @@
 import sys
-import os
-import userbot.utils  # pylint:disable=E0602
+import os 
 from userbot import bot
 from telethon.tl import functions
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
