@@ -19,7 +19,7 @@ except:
     sys.exit(0)
 
 async def startupmessage():
-    await bot(functions.channels.JoinChannelRequest(channel="@simple_userbot")
+    await bot(functions.channels.JoinChannelRequest(channel="@simple_userbot"))
 
 
 for x in glob.glob("userbot/modules/*.py"):
