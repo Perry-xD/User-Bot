@@ -1,7 +1,7 @@
-from ..utils import userbot
+from telethon import events
 import asyncio
 
-@userbot(pattern="jinda")
+@events.register(events.NewMessage(pattern="!jinda"))
 async def alive_me(event):
   me = await bot.get_me()
   await event.edit(f"**Aha Meh Alive {me.first_name} Sir!**")
