@@ -6,7 +6,7 @@ import asyncio
 
 is_allowed = []
 
-@events.register(events.NewMessage(incoming=True))
+@bot.on(events.NewMessage(incoming=True))
 async def pmpermit(event):
   if event.is_private:
     pass
@@ -18,7 +18,7 @@ async def pmpermit(event):
   else:
     await event.reply("**Hey bro! This is my master's dm don't spam**")
     
-@events.register(events.NewMessage(pattern="!allow"))
+@bot.on(events.NewMessage(pattern="!allow"))
 async def pmallow(event):
   if event.is_private:
     chat = event.get_chat()
@@ -43,7 +43,7 @@ async def pmallow(event):
 
 
 
-@events.register(events.NewMessage(pattern="!disallow"))
+@bot.on(events.NewMessage(pattern="!disallow"))
 async def pmdallow(e):
   if event.is_private:
     chat = event.get_chat()
@@ -66,7 +66,7 @@ async def pmdallow(e):
       
       
       
-@events.register(events.NewMessage(pattern="!listallowed"))
+@bot.on(events.NewMessage(pattern="!listallowed"))
 async def pmlistallow(e):
   for i in is_allowed:
     if len(i) > 0:
