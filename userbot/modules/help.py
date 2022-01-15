@@ -32,3 +32,8 @@ CMD_HELP.update({
     "pmpermit":
     "do !allow to allow someone to pm\ndo !disallow to disallow someone to pm\ndo !listallowed to get the list of allowed users in pm"
 })
+
+CMD_HELP.update({
+    "eval":
+    "do !eval <code> to evalute python code"
+})
