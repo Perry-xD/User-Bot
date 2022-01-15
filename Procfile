@@ -1,1 +1,1 @@
-web: bash badhiya
+worker: python3 -m userbot
